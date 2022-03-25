@@ -4,21 +4,22 @@
 # Created on: Mar 2022
 # This program is a guessing game
 
-import constants
 
 
 def main():
     # this function shows formatting output
 
     # input
-    number_from_user = int(input("Enter a number between 0-9: "))
+    integer = int(input("Enter an integer: "))
 
     # process & output
     print("")
-    if number_from_user == constants.number:
-        print("You guessed correctly!")
-    if number_from_user != constants.number:
-        print("You guessed incorrectly :(")
+    if integer > 0:
+        print("{0} is a positive number.".format(integer))
+    elif integer == 0:
+        print("{0} is just zero.".format(integer))
+    elif integer < 0:
+        print("{0} is a negative number.".format(integer))
 
     print("\nDone.")
 
