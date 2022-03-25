@@ -5,7 +5,6 @@
 # This program is a guessing game
 
 
-
 def main():
     # this function shows formatting output
 
